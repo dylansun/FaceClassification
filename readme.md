@@ -6,7 +6,7 @@ output: html_document
 ### Face image classification using pca and lda
 
 #### dataset
-The dataset used in this experiment is from the ORL data[1]. You may obtain this dataset from the [http://www.cl.cam.ac.uk/research/dtg/attarchive/facedatabase.html](this link). 
+The dataset used in this experiment is from the ORL data[1]. You may obtain this dataset from the [this link](http://www.cl.cam.ac.uk/research/dtg/attarchive/facedatabase.html). 
 
 #### Preprocessing
 We use matlab to reading the data and store them in a matfile. Then we use `readMat()` function from the R.matlab package to read them into R. In `preprocess_matlab_data.R`, we change the mat file to RData format which is more easy to use for R users. So if you use the data.RData file, you do not need to install the R.matlab package.
