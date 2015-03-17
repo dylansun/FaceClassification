@@ -1,0 +1,22 @@
+{
+    "contents" : "",
+    "created" : 1426574088071.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "E633F6EC",
+    "lastKnownWriteTime" : 265660288,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "caption" : "acc",
+        "contentUrl" : "content?title=acc&file=1d0fcd716de642eaada042c64cc6aad0.htm",
+        "displayedObservations" : 20,
+        "displayedVariables" : 1,
+        "totalObservations" : 20,
+        "variables" : 1
+    },
+    "source_on_save" : false,
+    "type" : "r_dataframe"
+}

@@ -1,0 +1,16 @@
+{
+    "contents" : "The ORL face database\n---------------------\n\nThis directory contains a set of faces taken between April 1992 and\nApril 1994 at the Olivetti Research Laboratory in Cambridge, UK.\n\nThere are 10 different images of 40 distinct subjects. For some of the\nsubjects, the images were taken at different times, varying lighting\nslightly, facial expressions (open/closed eyes, smiling/non-smiling)\nand facial details (glasses/no-glasses).  All the images are taken\nagainst a dark homogeneous background and the subjects are in\nup-right, frontal position (with tolerance for some side movement).\n\nThe files are in PGM format and can be conveniently viewed using the 'xv'\nprogram. The size of each image is 92x112, 8-bit grey levels. The images\nare organised in 40 directories (one for each subject) named as:\n\n\t\tsX\n\nwhere X indicates the subject number (between 1 and 40). In each directory\nthere are 10 different images of the selected subject named as:\n\n\t\tY.pgm\n\nwhere Y indicates which image for the specific subject (between 1 and 10).\n\nWhen using these images, please give credit to Olivetti Research Laboratory.\nA convenient reference is the face recognition work which uses some of\nthese images:\n\n F. Samaria and A. Harter \n  \"Parameterisation of a stochastic model for human face identification\"\n  2nd IEEE Workshop on Applications of Computer Vision\n  December 1994, Sarasota (Florida).\n\nThe paper is available via anonymous ftp from quince.cam-orl.co.uk and is\nstored in pub/users/fs/IEEE_workshop.ps.Z\n\nIf you have any question, please email Ferdinando Samaria: fs@cam-orl.co.uk\n",
+    "created" : 1426574344885.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3086818494",
+    "id" : "CB3CC68A",
+    "lastKnownWriteTime" : 793534438,
+    "path" : "~/GitHub/FaceClassification/att_faces/README",
+    "project_path" : "att_faces/README",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "text"
+}

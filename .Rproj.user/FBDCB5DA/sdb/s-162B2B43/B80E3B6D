@@ -1,0 +1,16 @@
+{
+    "contents" : "load(\"data.RData\")\nlibrary(MASS)\n\n## using all data to find the principal components, with scale \npr.out = prcomp(data, scale = T)\n\n## select firt 10 and project the data to subspace\nnpr = 10\ndata.new <- t(data) %*% pr.out$x[,1:npr]\n\n## bind data \ndf <- data.frame(data.new, as.factor(label))\nnames(df)[11] <- \"label\"\n\n## repeat n times \nn <- 20\nacc <- rep(0, n)\nfor(i in 1:n){\n  ## divide data into train/test groups \n  train <- sample(1:nrow(df), replace = F, size = floor(.8 * nrow(df)))\n  data.train <- df[train,]\n  data.test <- df[-train,]\n  \n  ## fit lda model and predict\n  lda.fit <- lda(label ~ . , data = data.train)\n  lda.pred = predict(lda.fit , newdata = data.test[,-11])\n  \n  ## calculate acc \n  acc[i] <- sum(data.test[,11] == lda.pred$class) / length(data.test[,11])\n}\n\nmean(acc)\n",
+    "created" : 1426573851707.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "360598904",
+    "id" : "B80E3B6D",
+    "lastKnownWriteTime" : 1426575054,
+    "path" : "~/GitHub/FaceClassification/pcalda_orl.R",
+    "project_path" : "pcalda_orl.R",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

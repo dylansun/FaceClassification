@@ -1,0 +1,16 @@
+{
+    "contents" : "library(\"R.matlab\")\ndata <-readMat(\"data.mat\")\ndata <- data$train\ndims <- dim(data)\nlabel <- rep(seq(1,40), each = 10)\nsave(data, label, file = \"data.RData\")\nrm(list = ls())\n\n",
+    "created" : 1426573819263.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3128745679",
+    "id" : "860F855D",
+    "lastKnownWriteTime" : 1426569168,
+    "path" : "~/GitHub/FaceClassification/preprecess_matlab_data.R",
+    "project_path" : "preprecess_matlab_data.R",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}
